@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="52dp"
+    android:background="@color/line_color"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:id="@+id/table_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="1px"
+        android:background="@color/white" >
+
+        <TableRow android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.5"
+                android:src="@drawable/icon_tracks_person"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/order_table_time"
+                android:layout_width="0dip"
+                android:layout_height="52dp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/content_color_black"
+                android:textSize="@dimen/size_14" />
+
+            <TextView
+                android:id="@+id/order_table_content"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:ellipsize="marquee"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/content_color_black"
+                android:textSize="@dimen/size_14" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

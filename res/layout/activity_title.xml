@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@drawable/top" >
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:onClick="back_onClick"
+        android:padding="10dp"
+        android:src="@drawable/back_icon" />
+
+    <TextView
+        android:id="@+id/tv_title_name"
+        style="@style/title_font"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:text=""
+        android:visibility="visible" />
+
+    <AutoCompleteTextView
+        android:id="@+id/et_address"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/iv_back"
+        android:background="@null"
+        android:completionThreshold="1"
+        android:dropDownVerticalOffset="1.0dip"
+        android:hint="请输入您的送餐地址"
+        android:imeOptions="actionDone"
+        android:inputType="text|textAutoComplete"
+        android:visibility="gone" />
+
+</RelativeLayout>

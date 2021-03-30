@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/show_gray_box_white_border"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="入库"
+        android:textColor="@color/content_color_black"
+        android:textSize="18sp" />
+    <!--
+     <ImageView 
+    android:layout_width="match_parent"
+    android:layout_height="1px"
+    android:background="@color/line_color"
+    />
+    -->
+
+    <TextView
+        android:id="@+id/num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:gravity="left"
+        android:text="当前库存：20"
+        android:textColor="@color/content_color_black" />
+
+    <EditText
+        android:id="@+id/ruku_num"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/show_white_box_border"
+        android:digits="1234567890."
+        android:gravity="left|center_vertical"
+        android:inputType="numberDecimal"
+        android:padding="4dp"
+        android:textColor="@color/content_color_black" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="10dp"
+        android:background="@color/line_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center"
+            android:text="取 消"
+            android:textColor="#53cdfd"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/line_color" />
+
+        <Button
+            android:id="@+id/ok"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center"
+            android:text="确 定"
+            android:textColor="#53cdfd"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>

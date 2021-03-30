@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_main" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/top" >
+
+        <ImageView
+            android:id="@+id/title_font"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:onClick="back_onClick"
+            android:padding="10dp"
+            android:src="@drawable/back_icon" />
+
+        <TextView
+            style="@style/title_font"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/title_font"
+            android:text="联系电话" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/up_down_border" >
+
+        <TextView
+            android:id="@+id/name1"
+            android:layout_width="wrap_content"
+            android:layout_height="52dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:text="热线1:"
+            android:textColor="@color/content_color_black"
+            android:textSize="16sp" />
+
+        <com.example.oto01.widget.CustomEditText
+            android:id="@+id/phone1"
+            android:layout_width="@dimen/w_300"
+            android:layout_height="32dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/w_5"
+            android:layout_marginTop="@dimen/w_10"
+            android:layout_toRightOf="@+id/name1"
+            android:background="@drawable/client_search_kuang"
+            android:digits="0123456789+-"
+            android:drawableRight="@drawable/ic_edit_text_delbtn"
+            android:freezesText="true"
+            android:gravity="center_vertical"
+            android:hint="联系电话1"
+            android:imeOptions="actionSearch"
+            android:maxLength="14"
+            android:paddingLeft="@dimen/w_5"
+            android:paddingRight="@dimen/w_5"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/dark_gary"
+            android:textSize="@dimen/size_16" />
+
+        <ImageView
+            android:id="@+id/line2"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignLeft="@+id/name1"
+            android:layout_below="@+id/name1"
+            android:src="@color/line_color" />
+
+        <TextView
+            android:id="@+id/name2"
+            android:layout_width="wrap_content"
+            android:layout_height="52dp"
+            android:layout_below="@+id/line2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:text="热线2:"
+            android:textColor="@color/content_color_black"
+            android:textSize="16sp" />
+
+        <com.example.oto01.widget.CustomEditText
+            android:id="@+id/phone2"
+            android:layout_width="@dimen/w_300"
+            android:layout_height="32dp"
+            android:layout_below="@+id/line2"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/w_5"
+            android:layout_marginTop="@dimen/w_10"
+            android:layout_toRightOf="@+id/name2"
+            android:background="@drawable/client_search_kuang"
+            android:digits="0123456789+-"
+            android:drawableRight="@drawable/ic_edit_text_delbtn"
+            android:freezesText="true"
+            android:gravity="center_vertical"
+            android:hint="联系电话2"
+            android:imeOptions="actionSearch"
+            android:maxLength="14"
+            android:paddingLeft="@dimen/w_5"
+            android:paddingRight="@dimen/w_5"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/dark_gary"
+            android:textSize="@dimen/size_16" />
+
+        <ImageView
+            android:id="@+id/line3"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/name2"
+            android:layout_marginLeft="10dp"
+            android:src="@color/line_color" />
+
+        <TextView
+            android:id="@+id/name3"
+            android:layout_width="wrap_content"
+            android:layout_height="52dp"
+            android:layout_below="@+id/line3"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:text="热线3:"
+            android:textColor="@color/content_color_black"
+            android:textSize="16sp" />
+
+        <com.example.oto01.widget.CustomEditText
+            android:id="@+id/phone3"
+            android:layout_width="@dimen/w_300"
+            android:layout_height="32dp"
+            android:layout_below="@+id/line3"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/w_5"
+            android:layout_marginTop="@dimen/w_10"
+            android:layout_toRightOf="@+id/name2"
+            android:background="@drawable/client_search_kuang"
+            android:digits="0123456789+-"
+            android:drawableRight="@drawable/ic_edit_text_delbtn"
+            android:freezesText="true"
+            android:gravity="center_vertical"
+            android:hint="联系电话3"
+            android:imeOptions="actionSearch"
+            android:maxLength="14"
+            android:paddingLeft="@dimen/w_5"
+            android:paddingRight="@dimen/w_5"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/dark_gary"
+            android:textSize="@dimen/size_16" />
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/loginshape"
+        android:clickable="true"
+        android:onClick="save_onClick"
+        android:text="保 存"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size_16" />
+
+</RelativeLayout>

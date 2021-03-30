@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:focusable="false"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/layout123"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginLeft="10dip"
+            android:text="添加代金券"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edittext"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:gravity="center_vertical"
+            android:hint="请输入代金券号码"
+            android:inputType="textMultiLine"
+            android:padding="10dp"
+            android:focusable="true"
+            android:singleLine="false"
+            android:textColor="@color/background_main" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/background_main" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/dialog_cancle"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:text="取消"
+                android:focusable="false"
+                android:textColor="@color/background_main"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="fill_parent"
+                android:background="@color/background_main" />
+
+            <Button
+                android:id="@+id/dialog_ok"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:text="确认"
+                android:focusable="false"
+                android:textColor="@color/background_main"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

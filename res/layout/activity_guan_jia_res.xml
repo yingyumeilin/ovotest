@@ -1,0 +1,186 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_main"
+    tools:context=".GuanJiaResActivity" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/top" >
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:onClick="back_onClick"
+            android:padding="10dp"
+            android:src="@drawable/back_icon" />
+
+        <TextView
+            style="@style/title_font"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/iv"
+            android:text="我要找配送" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/up_down_border"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/r1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/t1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="社区e管家是专为社区e商户提供短物流配送的物流人员。"
+                android:textColor="@color/content_color_gary"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/t2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/t1"
+                android:layout_marginTop="6dp"
+                android:text="服务约定\n接到派送单后10分钟内到店取货，30分钟内完成送货。"
+                android:textColor="@color/content_color_gary"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/t3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/t2"
+                android:layout_marginTop="6dp"
+                android:text="在您提交申请后的2个工作日内，将会收到审核结果，请您及时关注，如果审核通过，您的订单可以选择社区e管家进行派送。"
+                android:textColor="@color/content_color_gary"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/r2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/res"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/content_color_red"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/res"
+                android:layout_marginTop="6dp"
+                android:textColor="@color/content_color_gary"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/addressT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/msg"
+                android:layout_marginTop="6dp"
+                android:text="您提交的商户地址是:"
+                android:textColor="@color/content_color_gary"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/msg"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="6dp"
+                android:layout_toRightOf="@id/addressT"
+                android:text="您"
+                android:textColor="@color/content_color_gary"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/reasonT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/address"
+                android:layout_marginTop="6dp"
+                android:text="未通过的原因是:"
+                android:textColor="@color/content_color_gary"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/reason"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/address"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="6dp"
+                android:layout_toRightOf="@id/reasonT"
+                android:text="信息有误"
+                android:textColor="@color/content_color_red"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/reason"
+                android:layout_marginTop="6dp"
+                android:text="如果对审核结果有任何疑问，可电话联系客服"
+                android:textColor="@color/content_color_gary"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/name"
+                android:layout_marginTop="6dp"
+                android:text="4000 789 000"
+                android:textColor="@color/lina_jie_color_blue"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/shenqing"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/content"
+        android:layout_margin="15dp"
+        android:background="@drawable/loginshape"
+        android:clickable="true"
+        android:onClick="shenqing_onClick"
+        android:text="申请社区e管家配送"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

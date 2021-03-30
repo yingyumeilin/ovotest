@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="iv_width">120dp</dimen>
+    <dimen name="iv_height">80dp</dimen>
+    <dimen name="iv_padding_top">350dp</dimen>
+    <dimen name="iv_padding_left">10dp</dimen>
+    <dimen name="iv_padding_left1">20dp</dimen>
+    <dimen name="iv_padding_height">60dp</dimen>
+    <dimen name="dropDownMenuHeight">48dp</dimen>
+    <dimen name="home_title">44dp</dimen>
+    <dimen name="main_bottom_height">60dp</dimen>
+    <dimen name="client_details_top">158dp</dimen>
+    <dimen name="client_details_tops">255dp</dimen>
+    <dimen name="fenghuangbao_height">400dp</dimen>
+    <!-- 营收折线图 -->
+    <dimen name="tu_big_text">20sp</dimen>
+    <dimen name="tu_little_text">16sp</dimen>
+    <!-- LineChartActivity -->
+    <dimen name="linechart_top_height">250dp</dimen>
+    <dimen name="linechart_jinri_top">21dp</dimen>
+    <dimen name="height_25">25dp</dimen>
+    <dimen name="height_44">44dp</dimen>
+    <dimen name="height_48">48dp</dimen>
+    <dimen name="height_5">5dp</dimen>
+    <dimen name="height_1">1dp</dimen>
+    <dimen name="height_10">10dp</dimen>
+    <dimen name="height_15">15dp</dimen>
+    <dimen name="height_20">20dp</dimen>
+    <dimen name="h_45">45dp</dimen>
+    <dimen name="w_25">25dp</dimen>
+    <dimen name="w_44">44dp</dimen>
+    <dimen name="w_48">48dp</dimen>
+    <dimen name="w_5">5dp</dimen>
+    <dimen name="w_1">1dp</dimen>
+    <dimen name="w_10">10dp</dimen>
+    <dimen name="w_15">15dp</dimen>
+    <dimen name="w_20">20dp</dimen>
+    <dimen name="width_80">80dp</dimen>
+    <dimen name="w_50">50dp</dimen>
+    <dimen name="w_30">30dp</dimen>
+    <dimen name="w_16">16dp</dimen>
+    <dimen name="w_2">2dp</dimen>
+    <dimen name="w_200">200dp</dimen>
+    <dimen name="w_24">24dp</dimen>
+    <dimen name="w_84">84dp</dimen>
+    <dimen name="w_14">14dp</dimen>
+    <dimen name="h_95">95dp</dimen>
+    <dimen name="h_76">76dp</dimen>
+    <dimen name="w_18">18dp</dimen>
+    <dimen name="w_40">40dp</dimen>
+    <dimen name="w_120">120dp</dimen>
+    <dimen name="size_12">12sp</dimen>
+    <dimen name="size_14">14sp</dimen>
+    <dimen name="size_18">18sp</dimen>
+    <dimen name="size_16">16sp</dimen>
+    <dimen name="size_20">20sp</dimen>
+    <dimen name="w_270">270dp</dimen>
+    <dimen name="w_12">12dp</dimen>
+    <dimen name="w_300">300dp</dimen>
+    <dimen name="w_520">520dp</dimen>
+    <dimen name="h_66">66dp</dimen>
+    <dimen name="h_65">65dp</dimen>
+    <dimen name="h_7">7dp</dimen>
+    <dimen name="h_74">74dp</dimen>
+    <dimen name="h_75">75dp</dimen>
+    <dimen name="w_332">332dp</dimen>
+    <dimen name="h_125">125dp</dimen>
+    <dimen name="w_60">60dp</dimen>
+    <dimen name="h_180">180dp</dimen>
+    <dimen name="w_7">7dp</dimen>
+    <dimen name="h_dp_line">0.5dp</dimen>
+
+</resources>

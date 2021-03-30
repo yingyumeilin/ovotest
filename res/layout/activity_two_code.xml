@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_main"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/include"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/include_title" />
+
+    <LinearLayout
+        android:id="@+id/ll_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/include"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/height_48"
+        android:background="@drawable/up_down_border"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/iv_qrcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_qrcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_code"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/height_25"
+        android:text="店铺二维码"
+        android:textColor="@color/first_color"
+        android:textSize="@dimen/size_18" />
+
+    <LinearLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/tv_qrcode"
+        android:layout_marginBottom="@dimen/height_20"
+        android:layout_marginTop="@dimen/height_25"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/rl_pr_store"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/iv_store_qr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/qr_blue_code" />
+
+            <TextView
+                android:id="@+id/tv_store_qr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_store_qr"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/height_5"
+                android:text="店铺二维码"
+                android:textColor="@color/blue_00"
+                android:textSize="@dimen/size_16" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_qr_store_pay"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/iv_store_pay_qr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/qr_black_code" />
+
+            <TextView
+                android:id="@+id/tv_store_pay_qr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_store_pay_qr"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/height_5"
+                android:text="到店付二维码"
+                android:textColor="@color/second_color"
+                android:textSize="@dimen/size_16" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

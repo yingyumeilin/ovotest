@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_below="@+id/title"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_180"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/money_money"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:clickable="true"
+            android:padding="5dip" >
+
+            <TextView
+                android:id="@+id/tv_money"
+                style="@style/yingshou_button"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/w_20"
+                android:text="金额从高到低"
+                android:textColor="@color/red"
+                android:textSize="@dimen/size_16" />
+
+            <ImageView
+                android:id="@+id/iv_money_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/custom_dui_go" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/money_order"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/background_main"
+            android:clickable="true"
+            android:padding="5dip" >
+
+            <TextView
+                android:id="@+id/tv_order"
+                style="@style/yingshou_button"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/w_20"
+                android:text="订单从多到少"
+                android:textColor="@color/content_color_black"
+                android:textSize="@dimen/size_16" />
+
+            <ImageView
+                android:id="@+id/iv_money_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/custom_dui_go"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/money_time"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/background_main"
+            android:clickable="true"
+            android:padding="5dip" >
+
+            <TextView
+                android:id="@+id/tv_time"
+                style="@style/yingshou_button"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/w_20"
+                android:text="最近下单时间"
+                android:textColor="@color/content_color_black"
+                android:textSize="@dimen/size_16" />
+
+            <ImageView
+                android:id="@+id/iv_money_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/custom_dui_go"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/money_name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/background_main"
+            android:clickable="true"
+            android:padding="5dip" >
+
+            <TextView
+                android:id="@+id/tv_name"
+                style="@style/yingshou_button"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/w_20"
+                android:text="姓名排序"
+                android:textColor="@color/content_color_black"
+                android:textSize="@dimen/size_16" />
+
+            <ImageView
+                android:id="@+id/iv_money_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/custom_dui_go"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,114 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="72dp"
+    android:background="@color/white"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center_vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_all"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:id="@+id/iv_dian"
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="17dp"
+            android:src="@drawable/red_dian" />
+
+        <TextView
+            android:id="@+id/ordernum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/iv_dian"
+            android:text=""
+            android:textColor="@color/content_color_black"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/ordernum"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:text=""
+            android:textColor="@color/content_color_gary" />
+
+        <TextView
+            android:id="@+id/msg2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/ordernum"
+            android:layout_below="@id/ordernum"
+            android:layout_marginTop="10dp"
+            android:text="金额:"
+            android:textColor="@color/content_color_gary" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/msg2"
+            android:layout_below="@id/title"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/msg2"
+            android:text=""
+            android:textColor="@color/content_color_red" />
+
+        <TextView
+            android:id="@+id/msg3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/msg2"
+            android:layout_below="@id/title"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/price"
+            android:text="数量:"
+            android:textColor="@color/content_color_gary" />
+
+        <TextView
+            android:id="@+id/num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/msg2"
+            android:layout_below="@id/title"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/msg3"
+            android:text=""
+            android:textColor="@color/content_color_red" />
+
+        <ImageView
+            android:id="@+id/mark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ordernum"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@+id/del"
+            android:src="@drawable/qizhi_gary" />
+
+        <ImageView
+            android:id="@+id/del"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/ordernum"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/del_phone" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:src="@color/line_color" />
+    </RelativeLayout>
+
+</RelativeLayout>

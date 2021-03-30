@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+android:layout_width = "match_parent"
+android:background="@drawable/show_gray_box_white_border"
+android:layout_height = "wrap_content"
+>
+
+<TextView
+   android:id = "@+id/type_name"
+   android:layout_width = "match_parent"
+   android:layout_height = "wrap_content"
+   android:layout_margin="15dp"
+   android:textColor="@color/content_color_black"
+   android:gravity = "left|center_vertical"
+   android:layout_gravity="center"
+   android:textSize="16sp"
+   android:lineSpacingExtra="3dp"
+   android:text="1、请填写您的真实手机号\n2、点击“获取验证码”按钮\n3、再输入您收到的短信里的验证码\n4、最后再设置一个密码"
+   />
+<ImageView 
+    android:layout_width="match_parent"
+    android:layout_height="1px"
+    android:background="@color/line_color"
+    />
+<TextView 
+     android:id = "@+id/ok"
+   android:layout_width = "match_parent"
+   android:layout_height = "48dp"
+   android:textColor="#53cdfd"
+   android:gravity = "center"
+   android:textSize="18sp"
+   android:text="确 定"
+    />
+</LinearLayout>

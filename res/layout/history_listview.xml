@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        android:gravity="center_horizontal|top"
+        android:text="该分类暂无数据"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <com.example.oto01.views.PullRefreshView
+        android:id="@+id/his_pull_refresh_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/info"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/history_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background_main"
+            android:divider="@null" />
+    </com.example.oto01.views.PullRefreshView>
+
+</RelativeLayout>

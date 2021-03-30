@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dip"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/tj"
+        android:layout_width="fill_parent"
+        android:layout_height="130dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/show_gray_box_white_border"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="e账户即“凤凰e账户”，是北京农商银行研发的一款电子账户产品，您可在线注册，“凤凰e账户”可用来在线收款、小额网上支付、投资理财使用。"
+            android:textColor="@color/content_color_black"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

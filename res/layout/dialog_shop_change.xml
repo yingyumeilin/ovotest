@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="310dip"
+    android:layout_height="wrap_content"
+    android:background="@drawable/hint_login_dialog_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/tj"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dip"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/hint_dialog_title"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:text="您的资料已提交审核,请耐心等待！"
+            android:textColor="@color/content_color_black"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/line_color" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/ok"
+            android:layout_width="130dip"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:layout_toRightOf="@+id/view"
+            android:background="@null"
+            android:text="确定"
+            android:textColor="@color/dialog_pink"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</LinearLayout>

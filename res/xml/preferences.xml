@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <PreferenceCategory android:title="按键状态">
+        <CheckBoxPreference
+            android:title="开启声音"
+            android:defaultValue="false"
+            android:summary="当点击按钮时播放声音"
+            android:key="checkbox_open_sound" />
+        </PreferenceCategory>                
+        
+    <PreferenceCategory android:title="图片接收">
+        <CheckBoxPreference
+            android:title="自动接收图片"
+            android:defaultValue="false"
+            android:summary="GPRS,3G网络下自动接收并显示图片"
+            android:key="checkbox_img_receive" />
+        </PreferenceCategory>  
+	<PreferenceCategory android:title="显示">
+	    <Preference
+	         android:title="更换皮肤"
+            android:summary="更换主界面背景皮肤"
+            android:key="preference_change_skin"
+	        >
+	        <intent
+            android:targetPackage="com.example.food"
+            android:targetClass="com.example.food.ChangeSkinActivity" />
+	        
+	    </Preference>
+       </PreferenceCategory>
+	<PreferenceCategory android:title="辅助功能">
+	    <Preference
+	         android:title="清除缓存"
+            android:summary="清除当前图片的缓存"
+            android:key="preference_remove_cache"
+	        />
+       </PreferenceCategory>
+	<PreferenceCategory android:title="帮助">
+	    <Preference
+	         android:title="关于我们"
+            android:summary="程序介绍与联系方式"
+            android:key="preference_about_me"
+	        >
+	        <intent
+            android:targetPackage="com.example.food"
+            android:targetClass="com.example.food.AboutWeActivity" />
+	    </Preference>
+	    <Preference
+	         android:title="反馈建议"
+            android:summary="反馈建议"
+            android:key="preference_feedback_suggest"
+	        />
+       </PreferenceCategory>
+</PreferenceScreen>

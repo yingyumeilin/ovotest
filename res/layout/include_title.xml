@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/home_title"
+        android:background="@drawable/top" >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:onClick="back_onClick"
+            android:padding="@dimen/w_12"
+            android:src="@drawable/back_icon" />
+
+        <com.example.oto01.widget.CustomEditText
+            android:id="@+id/school_friend"
+            android:layout_width="@dimen/w_300"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/w_30"
+            android:layout_marginTop="@dimen/h_7"
+            android:background="@drawable/client_search_kuang"
+            android:drawableLeft="@drawable/ic_search"
+            android:drawablePadding="@dimen/w_10"
+            android:drawableRight="@drawable/ic_edit_text_delbtn"
+            android:freezesText="true"
+            android:gravity="center_vertical"
+            android:hint="@string/school_friend_search_hint"
+            android:imeOptions="actionSearch"
+            android:paddingLeft="@dimen/w_5"
+            android:paddingRight="@dimen/w_5"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/dark_gary"
+            android:textSize="@dimen/size_16"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/title_font"
+            style="@style/title_font"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/w_5"
+            android:layout_toRightOf="@+id/iv_back" />
+
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/w_20"
+            android:layout_toLeftOf="@+id/iv_add"
+            android:clickable="true"
+            android:src="@drawable/client_search"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/w_10"
+            android:clickable="true"
+            android:src="@drawable/client_jia"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_not_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/w_25"
+            android:clickable="true"
+            android:src="@drawable/store_pay_not_verified"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_cancle"
+            style="@style/title_font_cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/w_10"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:text="取消"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_already_code"
+            style="@style/title_font_cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/w_20"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:text="已验证"
+            android:textSize="@dimen/size_12"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

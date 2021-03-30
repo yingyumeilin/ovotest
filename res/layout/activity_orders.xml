@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_main"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/top" >
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:onClick="back_onClick"
+            android:padding="10dp"
+            android:src="@drawable/back_icon" />
+
+        <TextView
+            android:id="@+id/title_font"
+            style="@style/title_font"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/iv"
+            android:text="订单管理" />
+
+        <TextView
+            android:id="@+id/badge_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@+id/title_font"
+            android:gravity="center"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:clickable="true"
+            android:src="@drawable/client_search"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#F9F9F9"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/rl_on_the_way"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/order_jinxing"
+            android:clickable="true" >
+
+            <TextView
+                android:id="@+id/tv_on_the_way"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="外卖/上门"
+                android:textColor="@color/text_content_red"
+                android:textSize="@dimen/size_16" />
+
+            <ImageView
+                android:id="@+id/red_dian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/tv_on_the_way"
+                android:src="@drawable/little_red_dian" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="@dimen/w_30"
+            android:layout_gravity="center_vertical"
+            android:src="@color/line_color" />
+
+        <TextView
+            android:id="@+id/finish"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/no_select_bg"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="到店支付"
+            android:textSize="@dimen/size_16" />
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="@dimen/w_30"
+            android:layout_gravity="center_vertical"
+            android:src="@color/line_color" />
+
+        <TextView
+            android:id="@+id/closed"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/no_select_bg"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="会员卡订单"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="@dimen/w_30"
+            android:layout_gravity="center_vertical"
+            android:src="@color/line_color" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_on_the_way"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_48"
+        android:background="#F9F9F9"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/ll_wait_receive_order"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_48"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:clickable="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/wait_receive_order"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/w_30"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/text_content_red"
+                android:textSize="@dimen/size_16" />
+
+            <TextView
+                android:id="@+id/tv_wait_receive_order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="待接单"
+                android:textColor="@color/text_content_red"
+                android:textSize="@dimen/size_12" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="@dimen/w_30"
+            android:layout_gravity="center_vertical"
+            android:src="@color/line_color" />
+
+        <LinearLayout
+            android:id="@+id/overhang"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_48"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:clickable="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_overhang"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/w_30"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/content_color_black"
+                android:textSize="@dimen/size_16" />
+
+            <TextView
+                android:id="@+id/overhang_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="待发货"
+                android:textColor="@color/content_color_black"
+                android:textSize="@dimen/size_12" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="@dimen/w_30"
+            android:layout_gravity="center_vertical"
+            android:src="@color/line_color" />
+
+        <LinearLayout
+            android:id="@+id/ll_wait_pay_order"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_48"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:clickable="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_wait_pay_order"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/w_30"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/content_color_black"
+                android:textSize="@dimen/size_16" />
+
+            <TextView
+                android:id="@+id/wait_pay_order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="已发货"
+                android:textColor="@color/content_color_black"
+                android:textSize="@dimen/size_12" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="@dimen/w_30"
+            android:layout_gravity="center_vertical"
+            android:src="@color/line_color" />
+
+        <LinearLayout
+            android:id="@+id/obligation"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_48"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:clickable="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_obligation"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/w_30"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/content_color_black"
+                android:textSize="@dimen/size_16" />
+
+            <TextView
+                android:id="@+id/obligation_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="已完成/关闭"
+                android:textColor="@color/content_color_black"
+                android:textSize="@dimen/size_12" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_wait_receive_red"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/order_select_bg" />
+
+    <LinearLayout
+        android:id="@+id/iv_no"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/iv_no1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/no_order" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_listView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/pullToRefreshListView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="false"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:smoothScrollbar="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_listView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/pullToRefreshListView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="false"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:smoothScrollbar="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_listView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/pullToRefreshListView3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="false"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:smoothScrollbar="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_listView4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/pullToRefreshListView4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="false"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:smoothScrollbar="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_listView5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/pullToRefreshListView5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="false"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:smoothScrollbar="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_listView6"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/pullToRefreshListView6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="false"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:smoothScrollbar="true" />
+    </LinearLayout>
+
+</LinearLayout>

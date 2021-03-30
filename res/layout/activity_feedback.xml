@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_main"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/top" >
+
+        <ImageView
+            android:id="@+id/title_font"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:onClick="back_onClick"
+            android:padding="10dp"
+            android:src="@drawable/back_icon" />
+
+        <TextView
+            style="@style/title_font"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/title_font"
+            android:text="意见反馈" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/feed_back_content"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:background="@drawable/input_box_border"
+                android:gravity="top"
+                android:hint="留下您的宝贵意见，我们将持续改进产品(最多不能超过200字)"
+                android:lineSpacingExtra="3dp"
+                android:maxLength="200"
+                android:padding="8dp"
+                android:textColor="@color/content_color_gary"
+                android:textColorHint="@color/dark_gary"
+                android:textSize="@dimen/size_16" />
+
+            <EditText
+                android:id="@+id/body_contact"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/input_box_border"
+                android:ems="10"
+                android:hint="留下邮箱、QQ或电话等，以便联系"
+                android:maxHeight="80dp"
+                android:padding="10dp"
+                android:textColor="@color/content_color_gary"
+                android:textColorHint="@color/dark_gary"
+                android:textSize="@dimen/size_16" >
+            </EditText>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/loginshape"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="send_onClick"
+                android:text="提 交"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_16" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yobee="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/home_title"
+        android:background="@drawable/top"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:onClick="back_onClick"
+            android:padding="10dp"
+            android:src="@drawable/back_icon" />
+
+        <AutoCompleteTextView
+            android:id="@+id/keyWord"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/bg_search_input"
+            android:cacheColorHint="#00000000"
+            android:completionThreshold="1"
+            android:drawableLeft="@drawable/hui_location"
+            android:drawablePadding="5dp"
+            android:dropDownVerticalOffset="1.0dip"
+            android:hint="请输入地址"
+            android:imeOptions="actionDone"
+            android:inputType="text|textAutoComplete"
+            android:maxLength="20"
+            android:paddingLeft="5dp"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textSize="@dimen/size_16" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/fl_map"
+        android:layout_width="fill_parent"
+        android:layout_height="230dip"
+        android:layout_below="@+id/ll" >
+
+        <!-- <AutoCompleteTextView -->
+        <!-- android:id="@+id/keyWord" -->
+        <!-- android:layout_width="match_parent" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_marginLeft="5.0dip" -->
+        <!-- android:background="@drawable/text_search" -->
+        <!-- android:completionThreshold="1" -->
+        <!-- android:dropDownVerticalOffset="1.0dip" -->
+        <!-- android:hint="请输入关键字" -->
+        <!-- android:imeOptions="actionDone" -->
+        <!-- android:inputType="text|textAutoComplete" -->
+        <!-- android:maxLength="20" -->
+        <!-- android:singleLine="true" -->
+        <!-- android:textColor="#000000" -->
+        <!-- android:textSize="16.0sp" /> -->
+
+        <com.amap.api.maps2d.MapView
+            android:id="@+id/map_view"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent" />
+
+        <ImageView
+            android:id="@+id/now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dip"
+            android:layout_marginLeft="20dip"
+            android:background="@drawable/location_now" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listVIew"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/fl_map"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:smoothScrollbar="true" >
+    </ListView>
+
+    <ListView
+        android:id="@+id/listVIewSearch"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:smoothScrollbar="true"
+        android:visibility="gone" >
+    </ListView>
+
+</RelativeLayout>

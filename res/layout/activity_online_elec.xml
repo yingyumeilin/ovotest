@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_main"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/include_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/up_down_border"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_gravity="center_vertical"
+                    android:padding="10dp" >
+
+                    <ImageView
+                        android:id="@+id/icon2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:src="@drawable/online_name" />
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        style="@style/content_font_black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="6dp"
+                        android:layout_toRightOf="@+id/icon2"
+                        android:text="店主姓名：" />
+
+                    <EditText
+                        android:id="@+id/tv_online_name"
+                        style="@style/content_font_black"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignTop="@+id/textView1"
+                        android:layout_marginLeft="6dp"
+                        android:layout_toRightOf="@+id/textView1"
+                        android:background="@null"
+                        android:gravity="left|center_vertical" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:src="@color/line_color" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:padding="10dp" >
+
+                    <ImageView
+                        android:id="@+id/icon3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:src="@drawable/online_zhengjian" />
+
+                    <TextView
+                        android:id="@+id/tv_shengfen"
+                        style="@style/content_font_black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="6dp"
+                        android:layout_toRightOf="@+id/icon3"
+                        android:gravity="center_vertical"
+                        android:text="身份证号：" />
+
+                    <EditText
+                        android:id="@+id/tv_shengfenzhenghao"
+                        style="@style/content_font_black"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="6dp"
+                        android:layout_toRightOf="@+id/tv_shengfen"
+                        android:background="@null"
+                        android:gravity="left|center_vertical" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:src="@color/line_color" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:padding="10dp" >
+
+                    <ImageView
+                        android:id="@+id/icon40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:src="@drawable/online_phone" />
+
+                    <TextView
+                        android:id="@+id/tv_10"
+                        style="@style/content_font_black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="6dp"
+                        android:layout_toRightOf="@+id/icon40"
+                        android:gravity="center_vertical"
+                        android:text="电话号码：" />
+
+                    <EditText
+                        android:id="@+id/tv_phone"
+                        style="@style/content_font_black"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="6dp"
+                        android:layout_toRightOf="@+id/tv_10"
+                        android:background="@null"
+                        android:gravity="left|center_vertical" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:src="@color/line_color" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:padding="10dp" >
+
+                    <ImageView
+                        android:id="@+id/icon4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:src="@drawable/online_youxiang" />
+
+                    <TextView
+                        android:id="@+id/tv_4"
+                        style="@style/content_font_black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="6dp"
+                        android:layout_toRightOf="@+id/icon4"
+                        android:gravity="center_vertical"
+                        android:text="电子邮箱：" />
+
+                    <EditText
+                        android:id="@+id/et_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="6dp"
+                        android:layout_toRightOf="@+id/tv_4"
+                        android:background="@null"
+                        android:gravity="left|center_vertical"
+                        android:hint="真实填写，用于找到密码"
+                        android:textColor="@color/content_color_black"
+                        android:textColorHint="@color/dark_gary"
+                        android:textSize="@dimen/size_16" />
+
+                    <TextView
+                        android:id="@+id/tv_tixingyou"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:text="邮箱信息不正确"
+                        android:textColor="@color/red"
+                        android:textSize="20sp"
+                        android:visibility="invisible" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:src="@color/line_color" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:padding="10dp" >
+
+                    <ImageView
+                        android:id="@+id/icon5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:src="@drawable/online_tuijianma" />
+
+                    <TextView
+                        android:id="@+id/tv_5"
+                        style="@style/content_font_black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="6dp"
+                        android:layout_toRightOf="@+id/icon5"
+                        android:gravity="center_vertical"
+                        android:text="推 荐 码  ：" />
+
+                    <EditText
+                        android:id="@+id/et_tuijian"
+                        style="@style/content_font_black_little"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left|center_vertical"
+                        android:layout_marginLeft="6dp"
+                        android:layout_toRightOf="@+id/tv_5"
+                        android:background="@null"
+                        android:hint="（选填）"
+                        android:textColorHint="@color/dark_gary"
+                        android:textSize="@dimen/size_16" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/up_down_border"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:padding="10dp" >
+
+                    <ImageView
+                        android:id="@+id/icon6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:src="@drawable/online_shenfenzheng" />
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        style="@style/content_font_black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="6dp"
+                        android:layout_toRightOf="@+id/icon6"
+                        android:gravity="center_vertical"
+                        android:text="身份验证" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:src="@color/line_color" />
+
+                <TextView
+                    style="@style/content_font_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:text="上传身份证正/反面照片：" />
+
+                <TextView
+                    style="@style/content_font_black_little12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:text="1、保证身份证照片正/反面清晰可见" />
+
+                <TextView
+                    style="@style/content_font_black_little12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:text="2、身份证在有效期" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_identificationcard_zhengmian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/online_zhengmian"
+                    android:clickable="true"
+                    android:padding="10dp" >
+
+                    <ImageView
+                        android:id="@+id/iv_identificationcard_zhengmian"
+                        android:layout_width="400dp"
+                        android:layout_height="200dp"
+                        android:scaleType="centerCrop" />
+
+                    <TextView
+                        android:id="@+id/tv_tixing"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="此照片不符合标准，请重新上传"
+                        android:textColor="@color/red"
+                        android:textSize="20sp"
+                        android:visibility="invisible" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_identificationcard_beimian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/online_fanmian"
+                    android:clickable="true"
+                    android:padding="10dp" >
+
+                    <ImageView
+                        android:id="@+id/iv_identificationcard_beimian"
+                        android:layout_width="400dp"
+                        android:layout_height="200dp"
+                        android:scaleType="centerCrop" />
+
+                    <TextView
+                        android:id="@+id/tv_tixing1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="此照片不符合标准，请重新上传"
+                        android:textColor="@color/red"
+                        android:textSize="20sp"
+                        android:visibility="invisible" />
+                </RelativeLayout>
+
+                <TextView
+                    style="@style/content_font_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:text="上传手持身份证照片：" />
+
+                <TextView
+                    style="@style/content_font_black_little12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:text="1、请手持身份证正面和本人面部合照" />
+
+                <TextView
+                    style="@style/content_font_black_little12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:text="2、保证身份证文字与人面部正面五官清晰可见" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_identificationcard_shouchi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/online_people_zhengjian"
+                    android:clickable="true"
+                    android:padding="10dp" >
+
+                    <ImageView
+                        android:id="@+id/iv_identificationcard_shouchi"
+                        android:layout_width="400dp"
+                        android:layout_height="200dp"
+                        android:scaleType="centerCrop" />
+
+                    <TextView
+                        android:id="@+id/tv_tixing4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="此照片不符合标准，请重新上传"
+                        android:textColor="@color/red"
+                        android:textSize="20sp"
+                        android:visibility="invisible" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/iv_duihao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:src="@drawable/online_yes" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="阅读并同意"
+                    android:textColor="@color/content_color_black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_xieyi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:clickable="true"
+                    android:onClick="read_onClick"
+                    android:text="《凤凰e账户用户协议》"
+                    android:textColor="@color/content_color_blue"
+                    android:textSize="@dimen/size_16" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/loginshape"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="send_onClick"
+                android:text="下一步"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_16" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

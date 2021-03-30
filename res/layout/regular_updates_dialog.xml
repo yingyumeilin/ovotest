@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="320dip"
+    android:layout_height="wrap_content"
+    android:background="#ffffff" >
+
+    <RelativeLayout
+        android:id="@+id/regularupdatestitle"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_marginTop="10dip"
+        android:gravity="center_horizontal" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="发现新版本"
+            android:textColor="@color/content_color_black"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:layout_toRightOf="@+id/textView1"
+            android:text="ver."
+            android:textColor="@color/content_color_black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/versiontextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:layout_toRightOf="@+id/textView2"
+            android:textColor="@color/content_color_black"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tj"
+        android:layout_width="fill_parent"
+        android:layout_height="110dip"
+        android:layout_below="@+id/regularupdatestitle"
+        >
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent" >
+            <TextView
+                android:id="@+id/updateinfotextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:textColor="@color/content_color_black"
+                android:textSize="18sp" />
+        </ScrollView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_below="@+id/tj"
+        android:layout_marginTop="10dip"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/cancelbutton"
+            android:layout_width="130dip"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/loginoutshape"
+            android:text="下次再说"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/downloadbutton"
+            android:layout_width="130dip"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:layout_toRightOf="@+id/cancelbutton"
+            android:background="@drawable/loginshape"
+            android:text="赶紧下载看看"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

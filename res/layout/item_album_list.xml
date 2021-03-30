@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- 相册列表  item -->
+
+
+    <ImageView
+        android:id="@+id/iv_album_img"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:paddingTop="5dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tv_album_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/iv_album_img"
+        android:text="Camera"
+        android:textColor="@color/text_gray" />
+
+
+    <TextView
+        android:id="@+id/tv_original_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/tv_album_title"
+        android:text="(2)"
+        android:textColor="@color/text_gray"
+        android:textSize="10sp" />
+
+</RelativeLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Activity background color -->
+    <drawable name="class_zero_background">#7f040000</drawable>
+
+    <!-- text color -->
+    <drawable name="text_color_red">#ffff4444</drawable>
+    <drawable name="text_color_black">#ff000000</drawable>
+    <drawable name="text_color_offwhite">#55ffffff</drawable>
+    <drawable name="text_color_blue">#cc33b5e5</drawable>
+
+    <color name="login_form_hint">#ffb5b5b5</color>
+    <color name="yellow_light">#ffefa717</color>
+    <color name="text_hairline">#ffcccccc</color>
+    <color name="list_background">#fff1f1f1</color>
+    <color name="message_count_color">#66333333</color>
+
+    <!-- Chat "sent time" text background -->
+    <color name="timestamp_color">#bf000000</color>
+
+    <!-- the background color used for unread conversation -->
+    <color name="unread_bgcolor">#ffffffff</color>
+    <color name="read_bgcolor">#ffeeeeee</color>
+    <color name="dark_gary">#666666</color>
+    <!-- wsc strat -->
+    <color name="pay_green">#4cd964</color>
+    <color name="red">#FF0000</color>
+    <color name="text_content_red">#FF7D7B</color>
+    <color name="black">#000000</color>
+    <color name="gray_back">#eeeeee</color>
+    <color name="blue">#073888</color>
+    <color name="blue_fenlei">#00c1ff</color>
+    <color name="blue_order">#0078ff</color>
+    <color name="blue_about_phone">#176de3</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="gray">#808080</color>
+    <color name="purple">#800080</color>
+    <color name="green">#008000</color>
+    <color name="dimgray">#696969</color>
+    <color name="deepblue">#214263</color>
+    <color name="transparent">#00000000</color>
+    <color name="gold">#b89766</color>
+    <color name="orange">#b89766</color>
+    <color name="oranges">#f79225</color>
+    <color name="welcome_text_color">#717171</color>
+    <color name="welcome_text_color1">#8c5900</color>
+    <color name="welcome_liner_color1">#F5F3F4</color>
+    <!-- wsc end -->
+    <color name="text_gray">#dad9d9</color>
+    <color name="home_text_post_info">#8a765a</color>
+    <color name="home_text_post_info_2">#c1a886</color>
+    <color name="home_tab_text_unchecked">#515567</color>
+    <color name="home_tab_text_checked">#305C91</color>
+    <color name="home_grid_text">#5B5B5B</color>
+    <color name="content_font_color">#5c5c5c</color>
+    <color name="content_font_color2">#A3A3A3</color>
+    <color name="content_bg_color">#fffbde</color>
+    <color name="textcolor">#666666</color>
+    <color name="white">#ffffff</color>
+    <!-- 白色 -->
+    <color name="about_text_color">#37414b</color>
+
+    <!-- 主背景颜色 -->
+    <color name="background_main">#f3f3f3</color>
+    <color name="dialog_pink">#fe817a</color>
+    <!-- 线条颜色 -->
+    <color name="line_color">#dddddd</color>
+    <!-- 说明文字的字体颜色 -->
+    <color name="instruction_text_color">#999999</color>
+
+    <!-- 内容字体白色 -->
+    <color name="content_text_color_white">#ffffff</color>
+
+    <!-- 输入框内部颜色 -->
+    <color name="input_border_color_white">#ffffff</color>
+
+    <!-- 链接颜色 -->
+    <color name="lina_jie_color_blue">#0078ff</color>
+
+    <!-- 内容绿色 -->
+    <color name="content_color_green">#22b33b</color>
+    <color name="content_blue">#0078ff</color>
+    <!-- 内容深色颜色 -->
+    <color name="content_color_black">#333333</color>
+    <color name="content_green">#22b33b</color>
+    <color name="content_revenue_today_red">#ee5048</color>
+    <color name="revenue_hui">#626a7d</color>
+    <!-- 内容浅色颜色 -->
+    <color name="content_color_gary">#666666</color>
+    <color name="content_color_blue">#3179e3</color>
+    <color name="content_blue1">#31cdfd</color>
+    <!-- money颜色 -->
+    <color name="content_color_red">#ee5048</color>
+    <color name="phone_color">#0d7bff</color>
+    <!-- 按钮颜色 -->
+    <color name="button_color_red">#f87473</color>
+    <!-- 按钮颜色 -->
+    <color name="button_color_red2">#ffb423</color>
+
+    <!-- 按钮颜色 -->
+    <color name="change_pwd_xuxian_color">#bbbbbb</color>
+
+    <!-- 按钮颜色 -->
+    <color name="change_pwd_shixian_color">#9ac885</color>
+
+    <!-- mark颜色 -->
+    <color name="mark_color">#c7c7cc</color>
+    <!-- delete颜色 -->
+    <color name="delete_color">#ff3800</color>
+    <!-- delete颜色 -->
+    <color name="tuijian_color">#ffab68</color>
+    <color name="titlecolor">#E33348</color>
+    <color name="hui_tiao">#c7c7c7</color>
+
+    <!-- 二维码扫描 -->
+    <color name="viewfinder_frame">#ff000000</color>
+    <color name="viewfinder_laser">#ffff0000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="result_view">#b0000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="listview_bg">#f3f3f3</color>
+    <color name="first_color">#333333</color>
+    <color name="second_color">#888888</color>
+    <color name="blue_00">#00b4dc</color>
+    <color name="main_background">#052d58</color>
+    <color name="main_text">#cfd7df</color>
+    <color name="viewfinder_frame_corner">#00b4dc</color>
+    <color name="line_between">#d7d7d7</color>
+
+</resources>

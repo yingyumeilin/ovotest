@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_main"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/include_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/up_down_border"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:clickable="true"
+            android:padding="10dp" >
+
+            <ImageView
+                android:id="@+id/icon2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:src="@drawable/client_add" />
+
+            <EditText
+                android:id="@+id/et_name"
+                style="@style/content_client_add"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="6dp"
+                android:layout_toRightOf="@+id/icon2"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="请输入姓名（最多六个字）"
+                android:maxLength="6" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:src="@color/line_color" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:clickable="true"
+            android:padding="10dp" >
+
+            <ImageView
+                android:id="@+id/iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:src="@drawable/client_phone" />
+
+            <EditText
+                android:id="@+id/et_phone"
+                style="@style/content_client_add"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="6dp"
+                android:layout_toRightOf="@+id/iv"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="请输入电话"
+                android:inputType="number"
+                android:maxLength="11" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/w_15"
+        android:layout_marginTop="@dimen/w_15" >
+
+        <Button
+            android:id="@+id/btn_client_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/client_add_people"
+            android:clickable="true"
+            android:text="添    加"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_16" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_tongxunlu"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@color/white"
+        android:clickable="true"
+        android:padding="10dp" >
+
+        <ImageView
+            android:id="@+id/iv_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:src="@drawable/client_tongxunlu" />
+
+        <TextView
+            style="@style/content_font_black"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@+id/iv_1"
+            android:gravity="center_vertical"
+            android:text="手机联系人" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="right|center_vertical"
+            android:src="@drawable/setting_icon_more" />
+    </RelativeLayout>
+
+</LinearLayout>

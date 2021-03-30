@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentLeft="true"
+    android:layout_below="@+id/title"
+    android:orientation="vertical" >
+
+    <!-- android:background="@color/background_main" -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_180"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/all_custom"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:clickable="true"
+            android:padding="5dip" >
+
+            <TextView
+                android:id="@+id/tv_all_custom"
+                style="@style/yingshou_button"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/w_20"
+                android:text="全部客户"
+                android:textColor="@color/red"
+                android:textSize="@dimen/size_16" />
+
+            <ImageView
+                android:id="@+id/iv_all_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/custom_dui_go" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/all_member_card"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/background_main"
+            android:clickable="true"
+            android:padding="5dip"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/tv_all_member_card"
+                style="@style/yingshou_button"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="会员卡客户"
+                android:textColor="@color/content_color_black"
+                android:textSize="@dimen/size_16" />
+
+            <ImageView
+                android:id="@+id/iv_all_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="20dp"
+                android:src="@drawable/custom_dui_go"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/all_shop_pay"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/background_main"
+            android:clickable="true"
+            android:padding="5dip" >
+
+            <ImageView
+                android:id="@+id/iv_all_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/custom_dui_go"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_all_shop_pay"
+                style="@style/yingshou_button"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/w_20"
+                android:text="到店支付客户"
+                android:textColor="@color/content_color_black"
+                android:textSize="@dimen/size_16" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/all_waimai_client"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/background_main"
+            android:clickable="true"
+            android:padding="5dip" >
+
+            <TextView
+                android:id="@+id/tv_waimai_client"
+                style="@style/yingshou_button"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/w_20"
+                android:text="外卖客户"
+                android:textColor="@color/content_color_black"
+                android:textSize="@dimen/size_16" />
+
+            <ImageView
+                android:id="@+id/iv_all_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/custom_dui_go"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/all_nohave_money"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/background_main"
+            android:clickable="true"
+            android:padding="5dip" >
+
+            <TextView
+                android:id="@+id/tv_nohave_money"
+                style="@style/yingshou_button"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/w_20"
+                android:text="无交易客户"
+                android:textColor="@color/content_color_black"
+                android:textSize="@dimen/size_16" />
+
+            <ImageView
+                android:id="@+id/iv_all_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/custom_dui_go"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#20000000"
+        android:visibility="visible" >
+    </FrameLayout>
+
+</LinearLayout>
